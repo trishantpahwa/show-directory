@@ -4,7 +4,9 @@
   "description": "A package to list files and folders in a directory.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon -w src/index.js --exec \"babel-node --presets es2015,stage-0 src/index.js\"",
+    "build": "babel src -s -D -d dist --presets es2015,stage0",
+    "start": "node dist"
   },
   "repository": {
     "type": "git",
