@@ -1,0 +1,27 @@
+{
+  "name": "show-directory",
+  "version": "1.0.0",
+  "description": "A package to list files and folders in a directory.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trishantpahwa/show-directory.git"
+  },
+  "author": "Trishant Pahwa <trishantpahwa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trishantpahwa/show-directory/issues"
+  },
+  "homepage": "https://github.com/trishantpahwa/show-directory#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^6.5.1",
+    "nodemon": "^1.19.4"
+  }
+}
