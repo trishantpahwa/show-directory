@@ -17,7 +17,7 @@ jobs:
           tags: true
           branch: master
     - stage: Tests
-      script: npm run build:with-tests && npm test
+      script: npm test
       test:
         provider: npm
         email: "trishantpahwa@gmail.com"
