@@ -38,6 +38,7 @@ jobs:
       deploy:
         provider: npm
         email: "trishantpahwa@gmail.com"
+        api_key: $NPM_TOKEN
         on:
           tags: true
           branch: master
