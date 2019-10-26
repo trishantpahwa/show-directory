@@ -11,7 +11,8 @@
     "clean": "rimraf dist",
     "pre-test": "babel tests -s -D -d dist --presets es2015,stage-0",
     "test": "npm run pre-test && mocha dist/index.test.js",
-    "travis": "npm run clean && npm run build:with-tests && npm test",
+    "code-coverage": "nyc mocha dist/index.test.js",
+    "travis": "npm run clean && npm run build:with-tests && npm test && npm run code-coverage",
     "lint": "eslint src"
   },
   "repository": {
@@ -34,6 +35,7 @@
     "eslint-config-google": "^0.14.0",
     "mocha": "^6.2.2",
     "nodemon": "^1.19.4",
+    "nyc": "^14.1.1",
     "rimraf": "^3.0.0"
   }
 }
