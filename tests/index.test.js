@@ -9,10 +9,12 @@ function test1() {
         path.pop();
         path = path.join('\\') + '\\sample_folder';
         describe('Directory Path' + path, function() {
-            it('should have the same directory.', function() {
-                let directory = new showDirectory(path).toString();
+            it('should have the same directory.', function() {                
                 fs.readFile('dist\/sample_folder_test_output.json', function(err, data) {
+                    let directory = new showDirectory(path).toString();
                     let sample_folder = JSON.parse(data.toString()).showDirectory.toString();
+                    console.log('Input path: ' + path);
+                    console.log('Current directory: ' + __dirname);
                     assert(directory, sample_folder);
                 });
             });
