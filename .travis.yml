@@ -11,11 +11,10 @@ jobs:
   include:
     - stage: npm release
       node_js: "7"
-      script: echo "Deploying to npm..." && npm publish
+      script: echo "Deploying to npm..."
       deploy:
         provider: npm
         email: "trishantpahwa@gmail.com"
-        api_key: "d1289530-81b3-4854-8bbb-05904085f451"
         on:
           tags: true
           branch: release
