@@ -32,7 +32,10 @@ jobs:
           branch: master
     - stage: Deployment
       node_js: "7"
+<<<<<<< HEAD
       before_script: 
+=======
+>>>>>>> 0f4473c0dc5ace3442a033a4614aff07992b560a
       script: npm run deploy
       deploy:
         provider: npm
@@ -42,6 +45,10 @@ jobs:
           branch: master
 stages:
   - Compile
+<<<<<<< HEAD
   - Tests
+=======
+  - Test
+>>>>>>> 0f4473c0dc5ace3442a033a4614aff07992b560a
   - Clean Compile
   - Deployment
