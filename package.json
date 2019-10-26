@@ -9,7 +9,8 @@
     "start": "node dist",
     "clean": "rimraf dist",
     "pre-test": "babel tests -s -D -d dist --presets es2015,stage-0",
-    "test": "npm run pre-test && mocha dist/index.test.js"
+    "test": "npm run pre-test && mocha dist/index.test.js",
+    "travis": "npm run clean && npm run build && npm test"
   },
   "repository": {
     "type": "git",
