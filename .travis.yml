@@ -47,3 +47,5 @@ stages:
   - Tests
   - Clean Compile
   - Deployment
+after_success:
+  - npm run semantic-release
