@@ -39,7 +39,7 @@ export default class showDirectory {
         let directoryContents = fs.readdirSync(pathName);
         let directoryContentPaths = [];
         directoryContents.forEach((directoryContent) => {
-            directoryContent = pathName + '\\' + directoryContent;
+            directoryContent = pathName + '\/' + directoryContent;
             directoryContentPaths.push(directoryContent);
         });
         directoryContentPaths.forEach((directoryContentPath) => {
