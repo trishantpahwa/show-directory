@@ -18,23 +18,14 @@ jobs:
           branch: master
     - stage: Tests
       script: npm test
-      test:
-        provider: npm
-        email: "trishantpahwa@gmail.com"
-        on:
-          tags: true
-          branch: master
-    - stage: Clean Compile
-      script: npm run build
-      clean-compile:
+      tests:
         provider: npm
         email: "trishantpahwa@gmail.com"
         on:
           tags: true
           branch: master
     - stage: Deployment
-      node_js: "7"
-      script: npm run build && echo "Continue to deployment."
+      script: npm run build
       deploy:
         provider: npm
         email: "trishantpahwa@gmail.com"
@@ -45,7 +36,6 @@ jobs:
 stages:
   - Compile
   - Tests
-  - Clean Compile
   - Deployment
 after_success:
   - npm run semantic-release
