@@ -8,6 +8,7 @@ function Testing_Directory_Contents() {
         var path = __dirname.toString().split('\\');
         path.pop();
         path = path.join('\\') + '\\dist\\sample_folder';
+        console.log(path);
         describe('Directory Path' + path, function() {
             it('should have the same directory.', function() {                
                 fs.readFile('dist\/sample_folder_test_output.json', function(err, data) {
