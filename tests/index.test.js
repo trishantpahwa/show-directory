@@ -11,7 +11,7 @@ function Test_Directory_Path() {
         it('should have the same path.', function() {
             console.log('Input path: ' + path);
             console.log('Current directory: ' + __dirname);
-            assert(path, __dirname);
+            assert.equal(path, __dirname);
         });
     });
 }
@@ -26,7 +26,7 @@ function Testing_Directory_Contents() {
                 fs.readFile('dist\/sample_folder_test_output.json', function(err, data) {
                     let directory = new showDirectory(path).toString();
                     let sample_folder = JSON.parse(data.toString()).showDirectory.toString();
-                    assert(directory, sample_folder);
+                    assert.equal(directory, sample_folder);
                 });
             });
         });
