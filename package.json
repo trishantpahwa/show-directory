@@ -5,12 +5,13 @@
   "main": "dist/index.js",
   "scripts": {
     "mon": "nodemon -w src/index.js --exec \"babel-node --presets es2015,stage-0 src/index.js\"",
-    "build": "babel src -s -D -d dist --presets es2015,stage-0 --ignore sample_folder",
+    "build": "npm run clean && babel src -s -D -d dist --presets es2015,stage-0 --ignore sample_folder",
+    "build:with-tests": "babel src -s -D -d dist --presets es2015,stage-0",
     "start": "node dist",
     "clean": "rimraf dist",
     "pre-test": "babel tests -s -D -d dist --presets es2015,stage-0",
     "test": "npm run pre-test && mocha dist/index.test.js",
-    "travis": "npm run clean && npm run build && npm test"
+    "travis": "npm run clean && npm run build:with-tests && npm test"
   },
   "repository": {
     "type": "git",
