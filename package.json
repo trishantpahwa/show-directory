@@ -10,9 +10,9 @@
     "start": "node dist",
     "clean": "rimraf dist",
     "pre-test": "babel tests -s -D -d dist --presets es2015,stage-0",
-    "test": "npm run pre-test && mocha dist/index.test.js",
+    "test": "npm run pre-test && mocha dist/index.test.js && npm run code-coverage",
     "code-coverage": "nyc mocha dist/index.test.js && nyc report --reporter=text-lcov | coveralls",
-    "travis": "npm run clean && npm run build:with-tests && npm test && npm run code-coverage",
+    "deploy": "npm publish",
     "lint": "eslint src"
   },
   "repository": {
@@ -38,6 +38,7 @@
     "mocha-lcov-reporter": "^1.3.0",
     "nodemon": "^1.19.4",
     "nyc": "^14.1.1",
-    "rimraf": "^3.0.0"
+    "rimraf": "^3.0.0",
+    "semantic-release": "^15.13.28"
   }
 }
