@@ -17,5 +17,6 @@ A node package to list files and folders in a current directory.
     let directory = new showDirectory(path).showDirectory;
     console.log(directory);  // Displays directory obj.
     console.log(directory.contents);  // Displays contents of a directory with a file/folder label
-    console.log(directory.dore)
+    console.log(directory.folders);  // Displays folders within the directory.
+    console.log(directory.files);  // Displays files within the directory.
 ```
