@@ -1,6 +1,6 @@
 {
   "name": "show-directory",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "A package to list files and folders in a directory.",
   "main": "dist/index.js",
   "scripts": {
