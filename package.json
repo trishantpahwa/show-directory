@@ -1,6 +1,6 @@
 {
   "name": "show-directory",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "A package to list files and folders in a directory.",
   "main": "dist/index.js",
   "scripts": {
@@ -8,16 +8,17 @@
     "build": "npm run clean && babel src -s -D -d dist --presets es2015,stage-0 --ignore sample_folder",
     "build:with-tests": "babel src -s -D -d dist --presets es2015,stage-0",
     "start": "node dist",
+    "commit": "git-cz",
     "clean": "rimraf dist",
     "pre-test": "babel tests -s -D -d dist --presets es2015,stage-0",
     "test": "npm run pre-test && mocha dist/index.test.js && npm run code-coverage",
     "code-coverage": "nyc mocha dist/index.test.js && nyc report --reporter=text-lcov | coveralls",
-    "deploy": "npm publish",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trishantpahwa/show-directory.git"
+    "url": "https://github.com/trishantpahwa/show-directory.git"
   },
   "author": "Trishant Pahwa <trishantpahwa@gmail.com>",
   "license": "MIT",
@@ -31,7 +32,9 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "commitizen": "^4.0.3",
     "coveralls": "^3.0.7",
+    "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.6.0",
     "eslint-config-google": "^0.14.0",
     "mocha": "^6.2.2",
@@ -40,5 +43,10 @@
     "nyc": "^14.1.1",
     "rimraf": "^3.0.0",
     "semantic-release": "^15.13.28"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }
