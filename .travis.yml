@@ -32,7 +32,7 @@ jobs:
           branch: master
     - stage: Deployment
       node_js: "7"
-      script: npm run build && npm run deploy && npx semantic-release
+      script: npm run build && npm run deploy && semantic-release
       deploy:
         provider: npm
         email: "trishantpahwa@gmail.com"
