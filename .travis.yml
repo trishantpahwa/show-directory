@@ -34,7 +34,7 @@ jobs:
           branch: master
     - stage: Deployment
       node_js: "7"
-      script: npm run build && npm run deploy
+      script: npm run build && echo "Continue to deployment."
       deploy:
         provider: npm
         email: "trishantpahwa@gmail.com"
@@ -43,6 +43,7 @@ jobs:
           tags: true
           branch: master
 stages:
+  - Compile
+  - Tests
+  - Clean Compile
   - Deployment
-env:
-  - NPM_TOKEN=f353ca13-29b9-4bfd-871d-ac47b8750ea8
