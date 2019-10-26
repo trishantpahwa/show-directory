@@ -5,7 +5,7 @@ import showDirectory from './index';
 
 function Testing_Directory_Contents() {
     describe('Testing sample_folder', function() {
-        var path = __dirname.toString() + '\\sample_folder';
+        var path = __dirname.toString() + '\/sample_folder';
         describe('Directory Path' + path, function() {
             it('should have the same directory.', function() {                
                 fs.readFile('dist\/sample_folder_test_output.json', function(err, data) {
