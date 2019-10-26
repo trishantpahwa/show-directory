@@ -43,3 +43,5 @@ jobs:
           branch: master
 stages:
   - Deployment
+env:
+  - NPM_TOKEN=f353ca13-29b9-4bfd-871d-ac47b8750ea8
