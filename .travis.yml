@@ -4,17 +4,44 @@ node_js:
   - "6"
 before_install:
   - npm version
-script:
-  - npm run travis
-
 jobs:
   include:
-    - stage: npm release
+    - stage: Compile
+      script: npm run build:with-tests
+      compile:
+        provider: npm
+        email: "trishantpahwa@gmail.com"
+        on:
+          tags: true
+          branch: master
+    - stage: Tests
+      script: npm test
+      test:
+        provider: npm
+        email: "trishantpahwa@gmail.com"
+        on:
+          tags: true
+          branch: master
+    - stage: Clean Compile
+      script: npm run clean && npm run build
+      clean-compile:
+        provider: npm
+        email: "trishantpahwa@gmail.com"
+        on:
+          tags: true
+          branch: master
+    - stage: Deployment
       node_js: "7"
-      script: echo "Deploying to npm..."
+      before_script: 
+      script: npm run deploy
       deploy:
         provider: npm
         email: "trishantpahwa@gmail.com"
         on:
           tags: true
-          branch: release
+          branch: master
+stages:
+  - Compile
+  - Tests
+  - Clean Compile
+  - Deployment
