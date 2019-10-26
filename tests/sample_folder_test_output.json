@@ -1,0 +1,46 @@
+{
+    "showDirectory": {
+        "contents": { 
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1": "Folder",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\file1": "File",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\file2": "File",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\file3": "File",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\subfolder1": "Folder",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1\\sub_file1": "File",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1\\sub_sub_folder1": "Folder",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1\\sub_sub_folder1\\sub_sub_file1": "File",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1\\sub_sub_folder1\\sub_sub_file2": "File",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1\\sub_sub_folder2": "Folder",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1\\sub_sub_folder2\\sub_sub_file3": "File",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder2": "Folder",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder2\\sub_file2": "File",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder2": "Folder",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder2\\file4": "File",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder2\\file5": "File",
+                "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\sample_file": "File" 
+        },
+        "directory": { 
+            "files": [ 
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\file1",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\file2",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\file3",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1\\sub_file1",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1\\sub_sub_folder1\\sub_sub_file1",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1\\sub_sub_folder1\\sub_sub_file2",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1\\sub_sub_folder2\\sub_sub_file3",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder2\\sub_file2",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder2\\file4",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder2\\file5",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\sample_file"
+            ],
+            "folders": [
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1\\sub_sub_folder1",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder1\\sub_sub_folder2",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder1\\sub_folder2",
+                            "D:\\Trishant\\Work\\Projects\\show-directory\\sample_folder\\folder2"
+            ]
+        } 
+    }
+}
