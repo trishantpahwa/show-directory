@@ -12,7 +12,7 @@
     "pre-test": "babel tests -s -D -d dist --presets es2015,stage-0",
     "test": "npm run pre-test && mocha dist/index.test.js",
     "code-coverage": "nyc mocha dist/index.test.js && nyc report --reporter=text-lcov | coveralls",
-    "travis": "npm run clean && npm run build:with-tests && npm test && npm run code-coverage && npm publish",
+    "travis": "npm run clean && npm run build:with-tests && npm test && npm run code-coverage",
     "lint": "eslint src"
   },
   "repository": {

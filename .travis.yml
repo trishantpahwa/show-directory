@@ -11,7 +11,7 @@ jobs:
   include:
     - stage: npm release
       node_js: "7"
-      script: echo "Deploying to npm..."
+      script: npm publish
       deploy:
         provider: npm
         email: "trishantpahwa@gmail.com"
