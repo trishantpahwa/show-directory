@@ -12,7 +12,7 @@
     "pre-test": "babel tests -s -D -d dist --presets es2015,stage-0",
     "test": "npm run pre-test && mocha dist/index.test.js && npm run code-coverage",
     "code-coverage": "nyc mocha dist/index.test.js && nyc report --reporter=text-lcov | coveralls",
-    "deploy": "npm publish --access public",
+    "deploy": "npm publish",
     "lint": "eslint src"
   },
   "repository": {

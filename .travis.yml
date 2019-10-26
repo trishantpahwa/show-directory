@@ -4,6 +4,8 @@ node_js:
   - "6"
 before_install:
   - npm version
+before_script:
+  - npm prune
 jobs:
   include:
     - stage: Compile
@@ -32,11 +34,10 @@ jobs:
           branch: master
     - stage: Deployment
       node_js: "7"
-      script: npm run build && npm run deploy && semantic-release
+      script: npm run build && npm run deploy
       deploy:
         provider: npm
         email: "trishantpahwa@gmail.com"
-        api_key: "f353ca13-29b9-4bfd-871d-ac47b8750ea8"
         on:
           tags: true
           branch: master
