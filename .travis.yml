@@ -18,4 +18,4 @@ jobs:
         api_key: "d1289530-81b3-4854-8bbb-05904085f451"
         on:
           tags: true
-          branch: master
+          branch: release
