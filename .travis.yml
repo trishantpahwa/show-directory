@@ -4,6 +4,10 @@ node_js:
   - "6"
 before_install:
   - npm version
+before_script:
+  - npm prune
+after_success:
+  - npm run semantic-release
 jobs:
   include:
     - stage: Compile
@@ -15,7 +19,7 @@ jobs:
           tags: true
           branch: master
     - stage: Tests
-      script: npm test
+      script: npm run build:with-tests && npm test
       test:
         provider: npm
         email: "trishantpahwa@gmail.com"
@@ -23,7 +27,7 @@ jobs:
           tags: true
           branch: master
     - stage: Clean Compile
-      script: npm run clean && npm run build
+      script: npm run build
       clean-compile:
         provider: npm
         email: "trishantpahwa@gmail.com"
@@ -32,7 +36,7 @@ jobs:
           branch: master
     - stage: Deployment
       node_js: "7"
-      script: npm run deploy
+      script: npm run build && npm run deploy
       deploy:
         provider: npm
         email: "trishantpahwa@gmail.com"
