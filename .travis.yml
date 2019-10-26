@@ -1,15 +1,21 @@
 language: node_js
 node_js:
-  - 7
+  - "7"
+  - "6"
+  - "5"
+  - "4"
 before_install:
   - npm version
 script:
   - npm run travis
-deploy:
-  - provider: npm
-  - email: "trishantpahwa@gmail.com"
-  - api_key: "d1289530-81b3-4854-8bbb-05904085f451"
-  - script: "npm publish"
-  - on:
-    tags: true
-    branch: production
+
+jobs:
+  include:
+    - stage: npm release
+      node_js: "7"
+      script: "Deploying to npm..."
+      deploy:
+        provider: npm
+        email: "trishantpahwa@gmail.com"
+        api_key: "d1289530-81b3-4854-8bbb-05904085f451"
+        on: deploy-npm-release
