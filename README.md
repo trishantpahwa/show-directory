@@ -1,6 +1,7 @@
 # show-directory
 A node package to list files and folders in a current directory.
 
+![Travis (.org)](https://img.shields.io/travis/trishantpahwa/show-directory?style=plastic)
 ![GitHub](https://img.shields.io/github/license/trishantpahwa/show-directory?style=plastic)
 ![GitHub contributors](https://img.shields.io/github/contributors/trishantpahwa/show-directory?style=plastic)
 ![Coveralls github](https://img.shields.io/coveralls/github/trishantpahwa/show-directory?style=flat-square)
