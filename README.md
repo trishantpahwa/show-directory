@@ -1,7 +1,9 @@
 # show-directory
 A node package to list files and folders in a current directory.
 
-## This is an ECMAScript 2016 (ES6) class. It can be used to find the contents of a directory.
+![GitHub](https://img.shields.io/github/license/trishantpahwa/show-directory?style=plastic)
+
+#### This is an ECMAScript 2016 (ES6) class. It can be used to find the contents of a directory.
 
 ## Usage
 ```
