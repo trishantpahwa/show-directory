@@ -8,7 +8,7 @@
     "build": "npm run clean && babel src -s -D -d dist --presets es2015,stage-0 --ignore sample_folder",
     "build:with-tests": "babel src -s -D -d dist --presets es2015,stage-0",
     "start": "node dist",
-    "commit": "git-cz",
+    "commit": "git-cz && npm publish",
     "clean": "rimraf dist",
     "pre-test": "babel tests -s -D -d dist --presets es2015,stage-0",
     "test": "npm run build:with-tests && npm run pre-test && mocha dist/index.test.js && npm run code-coverage",
